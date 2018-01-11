@@ -1,15 +1,28 @@
 \documentclass{article}
 \usepackage{graphicx}
-
+\RequirePackage{natbib}
+\usepackage{amsthm,amsmath,natbib,enumerate}
+\usepackage{psfrag,epsf,float, bm, subcaption, url}
+\usepackage[x11names]{xcolor}
+\usepackage{etoolbox}
+\usepackage{framed} % provides framed env., should be removed in final draft
 \graphicspath{{figures_tables/}}
-
+\DeclareMathOperator*{\argmin}{arg\,min}
 \title{Nonparametric Bayesian method for exploratory gene expression analysis}
 \author{Eric T. Mittman}
 
 \begin{document}
-
+\% toggle on thesis content
+\newtoggle{thesis}
+\togglefalse{thesis}
 \maketitle
-\include{chapter1}
+\include{chapter3}
 
+\clearpage
+
+\appendix
+\include{appendix}
+\bibliographystyle{apalike}
+\bibliography{sample}
 \end{document}
 
