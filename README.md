@@ -1,14 +1,6 @@
-# chapter1Template
-
-This repository is both a standalone paper as well as a thesis chapter. 
-The main document is `chapter1.tex` that includes relevant content
-for the paper and the thesis.
-The document `paper1.tex` is a wrapper for `chapter1.tex` that creates the 
-stand-alone paper. 
-Both files may include additional tex files, 
-but these tex files should be placed in the main directory for ease converting
-the paper to a version suitable for submission on [arXiv](https://arxiv.org/).
-
-This repository may also contain subdirectories for code, figures, and tables.
-The figure directory will likely need to be included in the `\graphicspath` in
-the thesis.
+# A hierarchical failure-time model for observational data exhibiting infant-mortality and wearout failure modes
+- The focus is on modeling failure data across multiple populations with multimodality, often affected by truncation and censorship.
+- Hierarchical modeling is used to borrow information across groups, enhancing uncertainty assessment and enabling full inference for groups with limited data.
+- A hierarchical version of the generalized limited failure population model (Chan and Meeker, 1999) is introduced to address multimodality.
+- The model is applied to a large dataset of lifetime information from over 75,000 hard drives across 44 different models.
+- Flexibility of the Bayesian approach is demonstrated through posterior samples, utilizing Stan Development Team (2015) for model selection, assessment, estimation, and prediction.
